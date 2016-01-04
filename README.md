@@ -9,9 +9,9 @@ NOTE: This is intended to be used on Linux systems, no idea how you would get it
 
 ## Instructions
 
-You can either customise and build the Docker image yourself or just run launch-chrome.docker.sh as is to use the pre-built image on Docker Hub.
+You can either customise and build the Docker image yourself, which is a good idea since you'll get the latest version of Google Chrome. Or just run launch-chrome.docker.sh as is to use a pre-built image from Docker Hub.
 
-If you don't want Chrome stable or the 64bit version just edit the Dockerfile and build yourself.
+If you don't want Chrome stable or the 64bit version just edit the Dockerfile and build it yourself.
 
 1. Build Docker image (replace with your user name): `docker build --no-cache -t <UserName>/chrome .`
 2. Customise the values in launch-chrome.docker.sh
