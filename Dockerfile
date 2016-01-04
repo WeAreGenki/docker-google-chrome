@@ -41,5 +41,5 @@ ENTRYPOINT [ "/usr/bin/google-chrome-stable" ]
 # Chrome wont start unless setuid sandbox is disabled
 CMD [ "--disable-setuid-sandbox", "--disable-extensions", "--disable-bundled-ppapi-flash", "--no-first-run" ]
 
-# README: To run the image see the launch script:
+# README: Run image using the launch script:
 # https://github.com/MaxMilton/Ephemeral-Google-Chrome/blob/master/launch-chrome.docker.sh
