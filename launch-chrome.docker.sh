@@ -13,7 +13,5 @@ exec docker run --rm \
     --device /dev/snd \
     --volume /dev/snd:/dev/snd \
     --cap-drop=all \
-    --add-host "www.youtube.com ":127.0.0.1 \
-    local/chrome
-    
-# TODO: Remove --volume /dev/snd when --device works as expected
+    --add-host "www.youtube.com www.facebook.com":127.0.0.1 \
+    maxmilton/ephemeral-google-chrome

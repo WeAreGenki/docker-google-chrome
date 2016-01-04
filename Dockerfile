@@ -38,4 +38,5 @@ RUN groupadd -r chrome && useradd -m -g chrome chrome
 USER chrome
 
 ENTRYPOINT [ "/usr/bin/google-chrome-stable" ]
+# Chrome wont start unless setuid sandbox is disabled
 CMD [ "--disable-setuid-sandbox", "--disable-extensions", "--disable-bundled-ppapi-flash", "--no-first-run" ]
