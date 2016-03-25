@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/maxmilton/ephemeral-google-chrome:latest.svg)](https://imagelayers.io/?images=maxmilton/ephemeral-google-chrome:latest 'Get your own badge on imagelayers.io')
+
 Ephemeral Google Chrome in a Docker container useful for testing websites. Sometimes it's hard to clean caches (DNS, caching proxies, etc) but this is a browser environment that's completely clean every time.
 
 NOTE: This is intended to be used on Linux desktop systems -- no idea how to get it working on another OS. Also there's a few tweaks to harden security, if you have any problems please open a Github issue.
