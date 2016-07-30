@@ -15,7 +15,7 @@ NOTE: This is intended to be used on Linux desktop systems -- no idea how to get
 
 You can either customise and build the Docker image yourself, which is a good idea since you'll get the latest version of Google Chrome. Or just run launch-chrome.docker.sh as is to use a pre-built image from Docker Hub.
 
-If you don't want Chrome stable x86_64 version just edit the Dockerfile and build it yourself.
+If you don't want Chrome stable x86_64 version just edit the Dockerfile and build it yourself:
 
 1. Build Docker image (replace with your user name): `docker build --no-cache -t <UserName>/chrome .`
 2. Customise the launcher using your favorite editor `vim launch-chrome.docker.sh`
