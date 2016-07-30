@@ -22,4 +22,4 @@ If you don't want Chrome stable or the 64bit version just edit the Dockerfile an
 
 # Note: Site Blocking
 
-For my own productivity I disable access to YouTube.com and Facebook.com. If you don't want this, remove the line in `launch-chrome.docker.sh`.
+To simulate network issues, you can block access to certain domains. By default YouTube.com and Facebook.com are blocked. Edit domains or remove this blocking in `launch-chrome.docker.sh`.
