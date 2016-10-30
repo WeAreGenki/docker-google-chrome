@@ -4,7 +4,7 @@
 xhost +local:docker
 
 # Run chrome in a restrictive Docker container
-# Also block websites for productivity
+# Also block websites to simulate network failures
 exec docker run --rm \
     --cpuset-cpus 0 \
     --memory 1g \
