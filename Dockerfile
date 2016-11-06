@@ -4,7 +4,7 @@
 # https://github.com/MaxMilton/Ephemeral-Google-Chrome/blob/master/launch-chrome.docker.sh
 #
 
-FROM debian:sid
+FROM debian:jessie
 MAINTAINER Max Milton <max@wearegenki.com>
 
 # Install Chrome + Xorg
