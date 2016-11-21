@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       libxtst6 \
       wget \
       xdg-utils \
- && dpkg -i '/usr/src/google-chrome-stable_current_amd64.deb' \
+ && dpkg -i '/usr/src/google-chrome-unstable_current_amd64.deb' \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/src/*
 
