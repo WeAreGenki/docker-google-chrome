@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       wget \
       xdg-utils \
  && dpkg -i '/usr/src/google-chrome-stable_current_amd64.deb' \
+ && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/src/*
 
 # Harden system by unsetting SUID on all programs other than chrome's sandbox
@@ -45,4 +46,4 @@ USER chrome
 ENTRYPOINT [ "/usr/bin/google-chrome-stable" ]
 
 # Chrome wont start unless setuid sandbox is disabled
-CMD [ "--disable-setuid-sandbox", "--disable-extensions", "--disable-bundled-ppapi-flash", "--no-first-run" ]
+CMD [ "--disable-sandbox", "--disable-extensions", "--disable-bundled-ppapi-flash", "--no-first-run" ]
