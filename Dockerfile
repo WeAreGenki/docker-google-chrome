@@ -8,7 +8,7 @@ FROM debian:sid
 MAINTAINER Max Milton <max@wearegenki.com>
 
 # Install Chrome + Xorg
-ADD https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb /usr/src/google-chrome-stable_current_amd64.deb
+ADD https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb /usr/src/google-chrome-stable_current_amd64.deb
 RUN apt-get update && apt-get install -y --no-install-recommends \
       ca-certificates \
       fonts-liberation \
