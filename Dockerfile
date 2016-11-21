@@ -8,7 +8,7 @@ FROM debian:sid
 MAINTAINER Max Milton <max@wearegenki.com>
 
 # Install Chrome + Xorg
-ADD https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb /usr/src/google-chrome-stable_current_amd64.deb
+ADD https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb /usr/src/google-chrome-unstable_current_amd64.deb
 RUN apt-get update && apt-get install -y --no-install-recommends \
       ca-certificates \
       fonts-liberation \
@@ -35,9 +35,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/src/*
 
 # Harden system by unsetting SUID on all programs other than chrome's sandbox
-RUN for i in `find / -perm +6000 -type f`; do chmod a-s $i; done \
- && chown root:root /opt/google/chrome/chrome-sandbox \
- && chmod 4755 /opt/google/chrome/chrome-sandbox
+#RUN for i in `find / -perm +6000 -type f`; do chmod a-s $i; done \
+# && chown root:root /opt/google/chrome/chrome-sandbox \
+# && chmod 4755 /opt/google/chrome/chrome-sandbox
 
 RUN groupadd --system chrome && useradd --create-home --gid chrome chrome
 
