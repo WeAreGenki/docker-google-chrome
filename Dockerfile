@@ -3,7 +3,7 @@
 # README: Run using the launch script:
 #   https://github.com/MaxMilton/Ephemeral-Google-Chrome/blob/master/launch-chrome.docker.sh
 
-FROM debian:sid-slim
+FROM debian:jessie-slim
 MAINTAINER Max Milton <max@wearegenki.com>
 
 # Install Chrome + Xorg
@@ -21,19 +21,22 @@ RUN set -xe \
 		gconf-service \
 		libappindicator1 \
 		libasound2 \
+	libcanberra-gtk-module \
+	libcurl3 \
 		libatk1.0-0 \
 		libc6 \
 		libcairo2 \
 		libcups2 \
 		libdbus-1-3 \
+	libexif-dev \
 		libexpat1 \
 		libfontconfig1 \
 		libfreetype6 \
 		libgcc1 \
 		libgconf-2-4 \
 		libgdk-pixbuf2.0-0 \
-		libgl1-mesa-dri \
-		libgl1-mesa-glx \
+	libgl1-mesa-dri \
+	libgl1-mesa-glx \
 		libglib2.0-0 \
 		libgtk2.0-0 \
 		libnspr4 \
@@ -53,6 +56,7 @@ RUN set -xe \
 		libxrender1 \
 		libxss1 \
 		libxtst6 \
+	libv4l-0 \
 		lsb-base \
 		wget \
 		xdg-utils \
@@ -73,4 +77,4 @@ USER chrome
 WORKDIR /home/chrome
 
 # Chrome wont start unless setuid sandbox is disabled
-CMD ["google-chrome-stable", "--disable-setuid-sandbox", "--disable-seccomp-filter-sandbox", "--disable-extensions", "--disable-bundled-ppapi-flash", "--no-first-run"]
+CMD ["google-chrome-stable", "--disable-setuid-sandbox", "--disable-extensions", "--disable-bundled-ppapi-flash", "--no-first-run"]

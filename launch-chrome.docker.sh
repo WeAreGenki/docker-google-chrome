@@ -12,8 +12,8 @@ exec docker run --rm \
     -e DISPLAY=unix"$DISPLAY" \
     --device /dev/snd \
     --volume /dev/snd:/dev/snd \
-    --cap-drop=all \
-    --security-opt no-new-privileges \
-    --read-only \
     --add-host "www.youtube.com www.facebook.com":127.0.0.1 \
-    maxmilton/ephemeral-google-chrome
+    maxmilton/google-chrome
+    # --cap-drop=all \
+    # --security-opt no-new-privileges \
+    # --read-only \
