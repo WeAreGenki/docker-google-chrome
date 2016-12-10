@@ -1,6 +1,6 @@
-[![](https://badge.imagelayers.io/maxmilton/ephemeral-google-chrome:latest.svg)](https://imagelayers.io/?images=maxmilton/ephemeral-google-chrome:latest 'Get your own badge on imagelayers.io')
+# Google Chrome Docker Image
 
-# Overview
+[![](https://images.microbadger.com/badges/image/maxmilton/google-chrome.svg)](https://microbadger.com/images/maxmilton/google-chrome "Get your own image badge on microbadger.com") [![GitHub Tag](https://img.shields.io/github/tag/MaxMilton/docker-google-chrome.svg)](https://registry.hub.docker.com/u/maxmilton/google-chrome/)
 
 Ephemeral Google Chrome in a Docker container useful for testing websites. Sometimes it's hard to clean caches (DNS, caching proxies, etc) but this is a browser environment that's completely clean every time.
 
