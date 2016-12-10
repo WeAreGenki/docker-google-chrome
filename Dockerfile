@@ -3,7 +3,7 @@
 # README: Run using the launch script:
 #   https://github.com/MaxMilton/Ephemeral-Google-Chrome/blob/master/launch-chrome.docker.sh
 
-FROM debian:jessie-slim
+FROM debian:sid-slim
 MAINTAINER Max Milton <max@wearegenki.com>
 
 # Install Chrome + Xorg
@@ -32,6 +32,8 @@ RUN set -xe \
 		libgcc1 \
 		libgconf-2-4 \
 		libgdk-pixbuf2.0-0 \
+		libgl1-mesa-dri \
+		libgl1-mesa-glx \
 		libglib2.0-0 \
 		libgtk2.0-0 \
 		libnspr4 \
