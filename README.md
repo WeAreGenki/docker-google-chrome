@@ -1,3 +1,7 @@
+**IMPORTANT: DEPRECIATED:** Please use https://github.com/MaxMilton/docker-chromium instead.
+
+-----
+
 # Google Chrome Docker Image
 
 [![](https://images.microbadger.com/badges/image/maxmilton/google-chrome.svg)](https://microbadger.com/images/maxmilton/google-chrome "Get your own image badge on microbadger.com") [![GitHub Tag](https://img.shields.io/github/tag/MaxMilton/docker-google-chrome.svg)](https://registry.hub.docker.com/u/maxmilton/google-chrome/)
